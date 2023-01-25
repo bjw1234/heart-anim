@@ -1,0 +1,65 @@
+body {
+  font-family: sans-serif;
+  color: #ffff;
+  overflow: hidden;
+  /* background-image: url(./bg.jpeg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.heart {
+  color: transparent;
+  font-size: 3rem;
+  padding: 2rem;
+  position: absolute;
+  top: -20px;
+  cursor: pointer;
+  animation: heart-animation 3s linear infinite, heart-blast 3s linear infinite;
+}
+
+@keyframes heart-animation {
+  from {
+    top: 100vh;
+    transform: scale(0.7);
+    transform: translateY(-5vh);
+  }
+
+  to {
+    transform: scale(1.3);
+    opacity: 0.5;
+    top: -20px;
+  }
+}
+
+.text {
+  text-align: center;
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+  -webkit-background-clip: text;
+  font-size: 40px;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(left, #129835, #ece648 25%, #129835 50%, #F9E92B 75%, rgb(40, 150, 38));
+  animation: word 5s linear infinite;
+}
+
+@keyframes word {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}
