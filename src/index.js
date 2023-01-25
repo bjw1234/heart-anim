@@ -28,9 +28,8 @@ function getRandomColor() {
 }
 
 // 数量监测
-// setInterval(() => {
-//   console.log('cur==', curHeartNum, 'init', initialNum);
-//   if (curHeartNum < initialNum) {
-//     createHeart();
-//   }
-// }, 50);
+setInterval(() => {
+  if (curHeartNum < initialNum) {
+    createHeart();
+  }
+}, 20);

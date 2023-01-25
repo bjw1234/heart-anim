@@ -1,10 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: sans-serif;
-  color: #ffff;
-  overflow: hidden;
-  /* background-image: url(./bg.jpeg); */
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow: hidden;
 }
 
@@ -13,8 +13,8 @@ body {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
   overflow: hidden;
+  filter: blur(1px);
 }
 
 .heart {
@@ -46,13 +46,25 @@ body {
   position: absolute;
   top: 5rem;
   width: 100%;
-  -webkit-background-clip: text;
   font-size: 40px;
   font-weight: bolder;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, #129835, #ece648 25%, #129835 50%, #F9E92B 75%, rgb(40, 150, 38));
-  animation: word 5s linear infinite;
+  color: #ff000066;
+    text-shadow: 2px 2px 3px #222;
 }
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  filter: blur(2px);
+  top: 0;
+  z-index: -1;
+  background-image: url(./bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
 
 @keyframes word {
   0% {
