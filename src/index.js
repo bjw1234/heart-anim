@@ -20,11 +20,11 @@ function createHeart() {
 }
 
 function getRandomColor() {
-  const cr = Math.random() * 255;
-  const cg = Math.random() * 255;
-  const cb = Math.random() * 255;
-  // const ca = Math.random() * 100 + 20;
-  return `rgb(${cr} ${cg} ${cb}`;
+  const cr = parseInt(Math.random() * 255, 10);
+  const cg = parseInt(Math.random() * 255, 10);
+  const cb = parseInt(Math.random() * 255, 10);
+  const ca = parseInt( Math.random() * 100 + 20, 10);
+  return `#${cr.toString(16)}${cg.toString(16)}${cb.toString(16)}${ca}`;
 }
 
 // 数量监测
