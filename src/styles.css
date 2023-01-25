@@ -23,7 +23,6 @@ body {
   padding: 2rem;
   position: absolute;
   top: -20px;
-  cursor: pointer;
   animation: heart-animation 3s linear infinite, heart-blast 3s linear infinite;
 }
 

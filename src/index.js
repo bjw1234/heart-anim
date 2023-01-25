@@ -23,8 +23,8 @@ function getRandomColor() {
   const cr = Math.random() * 255;
   const cg = Math.random() * 255;
   const cb = Math.random() * 255;
-  const ca = Math.random() * 100 + 20;
-  return `rgba(${cr} ${cg} ${cb} / ${ca}%)`;
+  // const ca = Math.random() * 100 + 20;
+  return `rgb(${cr} ${cg} ${cb}`;
 }
 
 // 数量监测
