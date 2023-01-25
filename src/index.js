@@ -24,7 +24,7 @@ function getRandomColor() {
   const cg = Math.random() * 255;
   const cb = Math.random() * 255;
   const ca = Math.random() * 100 + 20;
-  return `rgb(${cr} ${cg} ${cb} / ${ca}%)`
+  return `rgb(${cr} ${cg} ${cb} / ${ca}%)`;
 }
 
 // 数量监测
